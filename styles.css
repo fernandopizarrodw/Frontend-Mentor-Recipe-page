@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+body{
+    background-color: #f3e5d8;
+    font-family: 'Outfit', sans-serif;
+
+}
+strong{
+    font-family: 'Outfit', sans-serif;
+
+}
+main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:flex-start;
+    border-radius: 15px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 90px;
+    box-shadow: 2px 2px 3px ;
+}
+p{
+    font-size: 15px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+    font-family: 'Outfit', sans-serif;
+
+}
+h1, h2, h3 {
+    font-family: 'Young Serif', serif; /* 'Young Serif' es el nombre que usaste al importar */
+    /* Otros estilos de los títulos */
+  }
+h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+
+}
+h2{
+    margin-left: 35px;
+    color: #784940;
+    
+}
+h3{
+    margin-left: 50px;
+    color: #69354c;
+    margin-bottom: 1px;
+    font-family: 'Outfit', sans-serif;
+
+}
+.preparacion-list{
+    margin-left: 80px;
+    padding: 5px;
+    margin-bottom: 40px;
+    line-height: 1.9rem;
+}
+
+img{
+    width: 100%;
+    max-width: 630px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ingredientes{
+    margin-left: 60px;
+    padding: 5px;
+    margin-bottom: 40px;
+    line-height: 1.9rem;
+}
+.instrucciones{
+    margin-left: -6px;
+    margin-bottom: 40px;
+    line-height: 1.9rem;
+    margin-top: 10px;
+    padding-right: 40px;
+
+}
+.instrucciones ol {
+    padding-left: 1px; /* Ajusta este valor para la separación entre los números y el texto */
+    counter-reset: instruction-counter;
+  }
+  .instrucciones ol li{
+    padding-left: 10px;
+
+  }
+  
+
+ul, ol{
+    list-style-type: none;
+}
+li{
+    font-family: 'Outfit', sans-serif;
+
+}
+.nutrition{
+    margin-bottom: 20px;
+}
+.nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Espacio superior */
+  margin-bottom: 20px; 
+  margin-left: 50px;
+}
+.nutrition-table th {
+    padding: 8px 0; /* Espaciado vertical y sin espaciado horizontal */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-weight:900; /* Texto en negrita */
+    color: hsl(24, 5%, 18%); /* Color del texto (Stone 900) */
+  }
+  .nutrition-table td {
+    padding: 8px 0; /* Espaciado vertical y sin espaciado horizontal */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: #604644; /* Color del texto (Stone 900) */
+    font-family: 'Outfit', serif;
+    font-weight: bold;
+  }
+  .nutrition-table th,
+.nutrition-table td {
+  border-bottom: 1px solid hsl(30, 54%, 90%); /* Color de la línea (Stone 100) */
+}
+.nutrition-table tr:last-child th,
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+
+.ingredientes li::before {
+    content: "•"; /* El carácter del puntito */
+    display: inline-block; /* Para que ocupe espacio y puedas darle margen */
+    width: 1.0em; /* Espacio para el puntito */
+    color: hsl(14, 45%, 36%); /* El color del puntito */
+    margin-right: 0.5em; /* Espacio entre el puntito y el texto */
+    margin-left: -2.0em;
+
+}
+.instrucciones li::before {
+    content: counter(instruction-counter) "."; /* Muestra el valor del contador seguido de un punto */
+    counter-increment: instruction-counter; /* Incrementa el contador para el siguiente ítem */
+    color: hsl(14, 45%, 36%); /* El color que deseas para los números */
+    font-weight: bold; /* O cualquier otro estilo para los números */
+    display: inline-block; /* Para controlar el ancho y el margen */
+    width: 1.5em; /* Espacio para el número y el punto */
+    margin-right: 0.5em; /* Espacio entre el número y el texto del ítem */
+    text-align: left; /* Asegura que el número esté alineado a la derecha dentro de su espacio */
+    
+  }
+  
+  .instrucciones li {
+    padding-left: 0; /* Elimina el padding izquierdo predeterminado del li */
+    margin-left: 2em; /* Crea espacio para tus "números" personalizados */
+    /* El color del texto del li se definirá aquí */
+    color: #000; /* Reemplaza con el color deseado para el texto */
+  }
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
